@@ -2,12 +2,14 @@ import React, { useState, useEffect } from "react";
 import { ChakraProvider, Box, VStack, Container } from "@chakra-ui/react";
 import Form from "./components/Form";
 import TodoList from "./components/TodoList";
+import { Heading } from "@chakra-ui/react";
+
 
 const App = () => {
   const [tasks, setTasks] = useState([]);
-  const [filter, setFilter] = useState("all"); // todas, completas, incompletas
+  const [filter, setFilter] = useState("all"); // todas, completas, incompletas //
 
-  // Carga tareas desde localStorage 
+  // Carga tareas desde localStorage //
   useEffect(() => {
     const storedTasks = JSON.parse(localStorage.getItem("tasks"));
     if (storedTasks) {
@@ -15,7 +17,7 @@ const App = () => {
     }
   }, []);
 
-  // Guarda tareas en localStorage 
+  // Guarda tareas en localStorage //
   useEffect(() => {
     localStorage.setItem("tasks", JSON.stringify(tasks));
   }, [tasks]);
@@ -42,17 +44,27 @@ const App = () => {
 
   return (
     <VStack
-      minHeight="100vh"
+      minH="100vh"
       justifyContent="center"
       alignItems="center"
       bg="gray.50"
-      width="1900px"
+      width="100%"
+      bgGradient="linear(to-br, #1e40af, #701a75)"
     >
       <Box
         w="100%"
         maxW="600px"
         p={5}
       >
+        <Heading
+          as="h1"
+          size="xl"
+          textAlign="center"
+          color="gray.100"
+          mb={7}
+        >
+          To Do List
+        </Heading>
         <Form addTask={addTask} />
         <TodoList
           tasks={filteredTasks}

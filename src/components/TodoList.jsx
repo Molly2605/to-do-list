@@ -10,21 +10,20 @@ const TodoList = ({ tasks, toggleComplete, deleteTask, setFilter }) => {
           onChange={(e) => setFilter(e.target.value)}
           placeholder="Filtrar tareas"
           width="800px"
-          bg="pink.200"
+          bg="#d1d5db"
           color="pink.800"
-          borderColor="pink.400"
+          borderColor= "#701a75"
           borderWidth="2px"
           rounded="md"
           fontWeight="bold"
-          _hover={{ borderColor: "pink.500" }}
-          _focus={{ borderColor: "pink.600", boxShadow: "0 0 0 1px pink.600" }}
+          _hover={{ borderColor: "#701a75" }}
+          _focus={{ borderColor: "#701a75", boxShadow: "0 0 0 1px #701a75" }}
         >
           <option value="all">Todas</option>
           <option value="completed">Completadas</option>
           <option value="incompleted">Incompletas</option>
         </Select>
       </Box>
-      //seleccionar nuevo estilo
       {tasks.map((task) => (
         <Todo
           key={task.id}

@@ -21,20 +21,22 @@ const Form = ({ addTask }) => {
         </InputLeftElement>
         <Input
           type="text"
-          placeholder="Añadir tarea..."
+          placeholder="Ingrese una tarea..."
           value={taskText}
           onChange={(e) => setTaskText(e.target.value)}
-          borderColor="pink.400"
-          _focus={{ borderColor: "pink.500" }}
+          borderColor="#1c1917"
+          _focus={{ borderColor: "#1c1917" }}
+          backgroundColor={"pink.50"}
         />
       </InputGroup>
       <Button
+        textColor={"#e5e7eb"}
         type="submit"
-        colorScheme="pink"
+        backgroundColor="#1f2937"
         mt={2}
         width="full"
-        _hover={{ bg: "pink.600" }}
-        _active={{ bg: "pink.700" }}
+        _hover={{ bg: "#1c1917" }}
+        _active={{ bg: "#1f2937" }}
       >
         Agregar tarea
       </Button>
