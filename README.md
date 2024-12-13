@@ -1,8 +1,21 @@
-# React + Vite
+#  TO DO LIST APP
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+<div style="display: flex; justify-content: space-between; align-items: center;">
+<p>En este proyecto se crea una herramienta web que sirve para enumerar y organizar las actividades que se deben realizar</p> 
+<div style="flex: 1;">
+<img src="https://assets.asana.biz/transform/1ce15a06-9e9b-41a0-aacf-9fb8bc441fbd/article-project-management-make-better-to-do-lists-2x" alt="gif-marvel" width="150" style="margin-right: 10px;"/>
+</div>  
+</div>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<br>
+
+## Tecnologías Utilizadas
+
+El proyecto fue desarrollado en equipo utilizando las siguientes tecnologías:
+
+- **React + Vite** 
+- **Chakra UI**
+- **JavaScript**
+
